@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'pyttest',
   packages = ['pyttest'], # this must be the same as the name above
-  version = '0.1.0',
+  version = '0.2.0',
   description = 'A random test lib',
   author = 'Phillis',
   author_email = 'phillis.test@gmail.com',
