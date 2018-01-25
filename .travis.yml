@@ -1,0 +1,17 @@
+language: python
+
+python: 2.7
+
+install:
+  - python setup.py sdist
+
+script:
+  - echo 'hey'
+
+deploy:
+  provider: pypi
+  user: uccdistravis
+  password:
+    secure: IaqIm1s89U1Ke2gaJebK/t6ggo+JuNrvmR3A6qpswLrVX3XaWcbUeDWDwqAMmgPxnHWduKDscrd7bJfyAgM1k4bOieM3SaACLAzCPWh0yRCl1CzVXV33jopA48RsKJs26uCtoHhoGM4ueSqXvBB4sWgwTgEJ0FtSSto9+aO3OZA5tgQrW+NQ4ZCrfW0akViz5vunNZj67Kf6VwyrDgL6rA97BZQmS/VUDZ5/K3qs15o9bafKkDcAYWelvAByzIoDL4rsR+acVnQS9g7RP06239Xf3I7wJH7naz30eF69pwRRB0P/A0GUFht6UttknKA37dcdvtUwHV09Uolwy8l28AhIrtzOvojJAHCkxUKjs97SNrd72l+00mYb4VmNk0/IUh2FN0gQDJGc7SeRmG2IQFkcrOK8OeU/AzO4zNc3ao2G+0vhYKWPgyACswEsWh693WOmcJb8cIbQVoXx2Ua32r4WjKNDCWp+U6NJWCyVkIknhST3TJ5jO3Liny6WsVmpsVKeuPk/Uiexx9oZ2H0JUyp4DP/Te/09PJdLxnY8nvo9apPletrAIxNhti2eGrZa+xRCQQpSERQyXXShTFI8rx3NLAbPFh2VSFYjbTZEVuJz0F7As3tizwxzbNlzteMebMvf1EDX+jkVMAQjs2xBaeL1Zzsj63S80nSYWctaPnI=
+  on:
+    tags: true
